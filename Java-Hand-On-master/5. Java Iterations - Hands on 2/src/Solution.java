@@ -15,9 +15,9 @@ public class Solution {
         }
     }
     public static String factorial(int num){
-        BigInteger fact=new BigInteger("1");
+        BigInteger fact=BigInteger.ONE;
         for(int i=1;i<=num;i++){
-            fact=fact.multiply(new BigInteger(i+""));
+            fact=fact.multiply(BigInteger.valueOf(i));
         }
         return fact.toString();
     }
